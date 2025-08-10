@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조사병단 가입</title>
+</head>
+<body>
+
+    <h1> 조사병단 가입 신청서</h1>
+    <h2> 심장을 바쳐라. </h2>
+
+
+
+    <form>
+        <fieldset>
+            <legend> 훈련병 정보</legend>
+            본인 확인을 위해 사진을 함께 첨부해주세요.
+            <br>
+            <input type="file" >
+            <ul>
+                <li>
+                    <label for = "name">이름</label>
+                    <input type = "text" id = "name" required>
+                </li>
+                <li>
+                    <label for = "hometown-region">출신 고향</label>
+                    <select>
+                        <option value = "wall-maria">월 마리아</option>
+                        <option value = "wall-rose">월 로제</option>
+                        <option value = "wall-sina">월 시나</option>
+                    </select>
+                    <input type = "text" id = "hometown-region" placeholder="구의 이름을 작성하세요. (예: 시간시나구)" size="30%" required>
+                </li>
+                <li>
+                    <label for = "birthdate">생년 월일</label>
+                    <input type = "date" id = "birthdate">
+                </li>
+                <li>
+                    <label for = "height" min = "140">키</label>
+                    <input type = "number" id = "height">
+                </li>
+                <li>
+                    <label for = "weight" min = "30">몸무게</label>
+                    <input type = "number" id = "weight">
+                </li>
+            </ul>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend> 훈련 성적</legend>
+            <ul>
+                <li>
+                    <label for = "score">거인 이론</label>
+                    <input type = "number" id = "score">
+                </li>
+                <li>
+                    <label for = "punch-power">펀치력</label>
+                    <input id = "punch-power" type = "range" min = "0" max = "100" step = "1" value = "50"
+                    oninput = "document.getElementById('punch-power-value').innerText = this.value">
+                    <span id = "punch-power-value">50</span>
+                </li>
+                <li>
+                    <label for = "fight-power">전투력</label>
+                    <input id = "fight-power" type = "range" min = "0" max = "100" step = "1" value = "50"
+                    oninput = "document.getElementById('fight-power-value').innerText = this.value">
+                    <span id = "fight-power-value">50</span>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>지원동기</legend>
+            최소 300자, 최대 1000자<br>
+            <textarea id="motivation" cols ="80" rows="5" placeholder="왜 조사병단에 입단하고 싶은지, 거인에 대한 자신의 의견 등을 솔직하게 말씀해주세요."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>성격의 장단점</legend>
+            최소 300자, 최대 1000자<br>
+            <textarea id="personality" cols ="80" rows="5" placeholder="본인이 생각하는 팀워크에 대해서 말씀해주세요."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type = "radio" name = "mailing" id = "mailing_y" value = "mailing_yes" checked>
+            <label for = "mailing_y">메일 수신</label>
+            <input type = "radio" name = "mailing" id = "mailing_n" value = "mailing_no">
+            <label for = "mailing_n">메일 수신 안함</label>
+        </fieldset>
+
+        <br>
+        <button type="submit">제출하기</button>
+        <button type = "reset"> 새로고침</button>
+        <form>
+            <input type = "button" value = "돌아가기" onclick = "window.open('index.html')">
+        </form>
+    </form>
+
+
+</body>
+</html>
