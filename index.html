@@ -4,42 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        table, th, td{
-            border: 1px solid #ccc;
-            border-collapse: collapse;
-        }
-        th, td{
-            padding: 10px 20px;
-        }
-        thead{
-            background-color: green;
-            color: white;
-        }
-        figure {
-            text-align: center; /* figure 내부 컨텐츠를 가운데 정렬 */
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel = "stylesheet" href = "css/style.css"/>
 </head>
 <body>
-    <h1>진격의 거인</h1>
+    <h1 class = "title-shadow">진격의 거인</h1>
     <p>저는 진격의 거인을 <b>꽤</b> 재밌게 보았습니다.</p>
     <p>진격의 거인은 <em>에렌 예거라는 아이의 이야기</em>라고 볼 수 있습니다. <br> 정확히는 에렌 예거가 어떻게 세계 평화를 지키는가에 대한 이야기 입니다.</p>
     <blockquote>에렌 미안해 <br> 
         그리고 <strong> 고마워..</strong> 
     </blockquote>
 
-    <ul>
-        <li><a href = "#character">인물 정리</a></li>
-        <li><a href = "#bestScene">명장면</a></li>
-        <li><a href = "register.html">조사병단 가입</a></li>
+    <ul class = "none-style-list">
+        <li>
+            <i class="fa-solid fa-people-group"></i>
+            <a href = "#character" >인물 정리</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-forward-fast"></i>
+            <a href = "#bestScene">명장면</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-user-tie"></i>
+            <a href = "register.html">조사병단 가입</a>
+        </li>
     </ul>
+
+    <h2 id = "plot"> 여는 말 </h2>
+    <div>
+        <p> 그날, 인류는 떠올렸다. <br> その日ひ、人じん類るいは 思おもい出だした </p>
+        <p> 놈들에게 지배당해 왔던 공포를... <br> ヤツらに支し配はいされていた恐きょう怖ふを...</p>
+        <p> 새장 속에서 갇혀만 살았었던 굴욕을...<br> 鳥とり籠かごの中なかで囚とらわれていた屈くつ辱じょくを...</p>
+    </div>
 
     <br>
     <h2 id = "character"> 인물 정리</h2>
     <table>
         <colgroup>
-            <col span="4" style = "width: 150px;">
+            <col span="4">
         </colgroup>
         <thead>
             <tr>
@@ -65,7 +67,7 @@
                 <td>15세</td>
                 <td>170cm</td>
                 <td>🔥🔥🔥🔥🔥🔥</td>
-                <td>💗💗💗💗</td>
+                <td>💗💗💗</td>
             </tr>
             <tr>
                 <td>아르민 알레르토</td>
@@ -94,7 +96,7 @@
                 <td>16세</td>
                 <td>153cm</td>
                 <td>🔥🔥🔥🔥</td>
-                <td>💗💗💗💗</td>
+                <td>💗💗💗</td>
             </tr>
             <tr>
                 <td>유미르</td>

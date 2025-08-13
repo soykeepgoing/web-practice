@@ -1,0 +1,34 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asta+Sans:wght@600&family=Dongle&display=swap');
+
+body {
+    font-family: 'Asta Sans', sans-serif;
+    font-weight: 600; /* wght@600을 불러왔으니 굵기 지정 */
+    letter-spacing: 0.1em;
+}
+
+.none-style-list{
+    list-style: none;
+}
+
+.title-shadow{
+    color: black;
+    text-shadow: 2px 5px 4px red;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px dotted black;
+}
+thead{
+    background-color: green;
+    color: white;
+}
+figure {
+    text-align: center; /* figure 내부 컨텐츠를 가운데 정렬 */
+}
