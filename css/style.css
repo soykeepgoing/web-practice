@@ -7,6 +7,16 @@ body {
     letter-spacing: 0.1em;
 }
 
+.button-wrapper{
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.plot{
+    box-shadow: 5px 5px 10px ;
+}
+
 .none-style-list{
     list-style: none;
 }
