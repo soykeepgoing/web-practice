@@ -17,8 +17,18 @@ body {
     box-shadow: 5px 5px 10px ;
 }
 
-.none-style-list{
+.navigation-bar{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    
     list-style: none;
+}
+
+.navigation-bar li {
+    display: inline-block;   /* 각 항목을 가로로 */
+    margin: 0 5%;          
 }
 
 .title-shadow{
